@@ -1,0 +1,300 @@
+/*=================================================öбнулись============================================================*/
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url("Assets/HelveticaNeueCyr-Bold/HelveticaNeueCyr-Bold.ttf") format("ttf"),
+    url("Assets/HelveticaNeueCyr-Bold/HelveticaNeueCyr-Bold.woff") format("woff"),
+    url("Assets/HelveticaNeueCyr-Bold/HelveticaNeueCyr-Bold.woff2") format("woff2");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus, :active {
+    outline: none;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+a, a:visited, a:hover {
+    text-decoration: none;
+}
+
+html, body {
+    font-family: "Helvetica Neue";
+    display: flex;
+    height: 100%;
+    width: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+h1, h2, h3:hover {
+    cursor: default;
+}
+
+p:hover {
+    cursor: default;
+}
+
+/*=================================================main==============================================================*/
+
+body {
+    background: #252627;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*=================================================card==============================================================*/
+
+.card {
+    width: 50vh;
+    margin: 3vh;
+    border-radius: 3vh;
+    padding: 0;
+    background: #6D7072;
+    box-shadow:
+            0 100px 80px rgba(0, 0, 0, 0.12),
+            0 42px 33px rgba(0, 0, 0, 0.086),
+            0 22px 18px rgba(0, 0, 0, 0.072),
+            0 13px 10px rgba(0, 0, 0, 0.06),
+            0 7px 5px rgba(0, 0, 0, 0.048),
+            0 3px 2px rgba(0, 0, 0, 0.034);
+    -webkit-box-shadow:
+            0 100px 80px rgba(0, 0, 0, 0.12),
+            0 42px 33px rgba(0, 0, 0, 0.086),
+            0 22px 18px rgba(0, 0, 0, 0.072),
+            0 13px 10px rgba(0, 0, 0, 0.06),
+            0 7px 5px rgba(0, 0, 0, 0.048),
+            0 3px 2px rgba(0, 0, 0, 0.034);
+    position: relative;
+}
+
+.main {
+    padding: 0;
+    width: 45vh;
+    height: 70vh;
+    background-image: url("Assets/Avatar.jpg");
+    background-repeat: no-repeat;
+    background-size: 48vh 72vh;
+    background-position: center -10vh;
+}
+
+.sub-card {
+    width: 100%;
+    background: #949697;
+    box-shadow:
+            0 -4px 4px rgba(0, 0, 0, 0.1),
+            0 -8px 7px rgba(0, 0, 0, 0.07),
+            0 -15px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 3vh;
+    bottom: 0;
+    padding: 3vh;
+}
+
+.sub-card h1, h2 {
+    font-size: 5vh;
+    line-height: 5vh;
+    color: #FFFFFF;
+    margin-bottom: 3vh;
+}
+
+.sub-card p {
+    font-size: 2.7vh;
+    line-height: 3.5vh;
+    color: #FFFFFF;
+}
+
+/*=================================================links=============================================================*/
+
+.links {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: -8.5vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.logo {
+    width: 6.25vh;
+    height: 6.25vh;
+    filter:
+            shadow(0 100px 80px rgba(0, 0, 0, 0.12))
+            shadow(0 42px 33px rgba(0, 0, 0, 0.086))
+            shadow(0 22px 18px rgba(0, 0, 0, 0.072))
+            shadow(0 13px 10px rgba(0, 0, 0, 0.06))
+            shadow(0 7px 5px rgba(0, 0, 0, 0.048))
+            shadow(0 3px 2px rgba(0, 0, 0, 0.034));
+    -webkit-filter:
+            drop-shadow(0 100px 80px rgba(0, 0, 0, 0.12))
+            drop-shadow(0 42px 33px rgba(0, 0, 0, 0.086))
+            drop-shadow(0 22px 18px rgba(0, 0, 0, 0.072))
+            drop-shadow(0 13px 10px rgba(0, 0, 0, 0.06))
+            drop-shadow(0 7px 5px rgba(0, 0, 0, 0.048))
+            drop-shadow(0 3px 2px rgba(0, 0, 0, 0.034));
+    background-size: 6vh 6vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mail {
+    background-image: url("Assets/Icons/mail.png");
+}
+
+.github {
+    background-image: url("Assets/Icons/gh.png");
+}
+
+.linked-in {
+    background-image: url("Assets/Icons/linkedin.png");
+}
+
+.tg {
+    background-image: url("Assets/Icons/telegram.png");
+}
+
+.vk {
+    background-image: url("Assets/Icons/vk.png");
+}
+
+.links>:hover{
+    transition: 400ms;
+    transform: scale(1.05);
+}
+
+/*=================================================card-holder========================================================*/
+
+.card-holder {
+    display: flex;
+    flex-direction: column;
+}
+
+/*=================================================stack-holder=======================================================*/
+
+.stack-holder {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+/*=================================================experience=========================================================*/
+
+.point {
+    display: flex;
+    margin-top: 2vh;
+}
+
+.point>p {
+    width: 33%;
+    margin: 0;
+    color: #212121;
+}
+
+.point>p:last-child {
+    width: 69%;
+    margin: 0 0 0 4%;
+    color: white;
+}
+
+.card>h2 {
+    margin: 3vh 0 1vh 3vh;
+}
+
+/*=================================================projects===========================================================*/
+
+.project {
+    display: flex;
+    flex-direction: column;
+}
+
+.project h3 {
+    width: 100%;
+    font-size: 3.5vh;
+    line-height: 3vh;
+    margin-bottom: 1.5vh;
+}
+
+.project-description {
+    width: 100%;
+}
+
+/*=================================================skills=============================================================*/
+
+.skills {
+    height: 100%;
+    min-height: 100%;
+    width: 40vh;
+}
+
+.sub-card>ul {
+    margin: 0 3vh 3vh 3vh;
+    color: #FFFFFF;
+    font-size: 3vh;
+}
+
+.sub-card>ul>p {
+    margin: 1.2vh 0;
+}
+
+/*=================================================rearrange==========================================================*/
+
+@media all and (max-aspect-ratio: 1/1) {
+
+    html {
+        height: auto;
+    }
+
+    body {
+        flex-direction: column;
+    }
+
+    .main {
+        margin-bottom: 9vh;
+    }
+
+    .stack-holder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills {
+        height: auto;
+        width: 50vh;
+    }
+
+}
+
+
+
